@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JARDINERIA</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="carrito.js"></script>
+    </head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg w-100">
+            <a class="navbar-brand" href="index.html">Venta de Productos para Jardinería</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="formulario2.html">Formulario</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">
+                            <img src="imagenes/icono.png" alt="Icono de usuario" class="smaller-image"> 
+                            <span id="username">Usuario</span> 
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+<section class="main-content container">
+    <h2>Carrito de Compras</h2>
+    <li class="nav-item">
+        <a class="nav-link" href="#" onclick="mostrarCarrito()">
+            <img src="imagenes/carrito.png" alt="Icono de carrito" class="smaller-image"> 
+        </a>
+    </li>
+    <form id="formAgregarProducto" class="mb-3">
+        <input id="nombreProducto" type="text" placeholder="Nombre del producto" required>
+        <input id="cantidadProducto" type="number" placeholder="Cantidad" required>
+        <button type="submit" class="add-to-cart-button">Agregar al carrito</button>
+    </form>
+    <ul id="listaDeCompras" class="list-group mt-3"></ul>
+</section>
+
+
+    <section class="main-content container">
+        <h2>Iniciativa Comunitaria</h2>
+        <p>Los vecinos de una comunidad comenzaron a realizar la venta de productos para jardinería como maceteros, tierra de hojas, flores y arbustos, todo esto para ayudar a una fundación sin fines de lucro. Todo partió a través de las redes sociales, pero en la actualidad es casi imposible dar abasto a la demanda a través de las redes sociales.</p>
+        <p>Por eso, se ha contactado a los alumnos del Duoc para que puedan ayudarles a construir una aplicación web que permita a sus usuarios elaborar listas de compras con la intención de permitir a los vecinos a ordenar sus presupuestos, mejorar sus finanzas, realizar el aporte a la fundación sin fines de lucro y mejorar la venta y el despacho de sus productos.</p>
+    </section>
+
+    <footer>
+        <p>Comunidad de Jardinería &copy; 2024</p>
+    </footer>
+</body>
+</html>

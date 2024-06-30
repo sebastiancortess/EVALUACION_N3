@@ -21,9 +21,13 @@ from . import views
 from . import views
 urlpatterns = [
     path('admin/', admin.site.urls),
-     path('producto/add/', views.producto_add, name='producto_add'),
-    path('', views.producto_list, name='producto_list'),
+    path('contacto/', views.contacto, name='contacto'),
+    path('producto/add/', views.producto_add, name='producto_add'),
+    path('producto/list/', views.producto_list, name='producto_list'),
     path('producto/edit/<int:pk>/', views.producto_edit, name='producto_edit'),
-     path('producto/delete/<int:id>/', views.producto_delete, name='producto_delete'),
-     path('productos/', views.lista_productos, name='producto_list'),
+    path('producto/delete/<int:id>/', views.producto_delete, name='producto_delete'),
+    path('productos/', views.lista_productos, name='lista_productos'),
+    # Asumiendo que quieres una ruta para el login y el index
+    path('login/', views.login_view, name='login'),
+    path('', views.index, name='index'),
 ]

@@ -39,3 +39,12 @@ def producto_delete(request, id):
 def lista_productos(request):
     productos = Producto.objects.all()  
     return render(request, 'producto_list.html', {'productos': productos})
+def lista_productos(request):
+    productos = Producto.objects.all()
+    return render(request, 'productos.html', {'productos': productos})
+
+def login_view(request):
+    return render(request, 'login.html')
+
+def index(request):
+    return render(request, 'index.html')
