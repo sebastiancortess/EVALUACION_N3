@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Agregar Producto</title>
+</head>
+<body>
+    <h1>Agregar Nuevo Producto</h1>
+    <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="id_nombre">Nombre:</label>
+            {{ form.nombre }}
+        </div>
+        <div class="form-group">
+            <label for="id_descripcion">Descripción:</label>
+            {{ form.descripcion }}
+        </div>
+        <div class="form-group">
+            <label for="id_precio">Precio:</label>
+            {{ form.precio }}
+        </div>
+        <button type="submit" class="button-link">Guardar</button>
+    </form>
+    <a href="{% url 'producto_list' %}" class="button-link">Volver a la lista</a>
+</body>
+</html>
