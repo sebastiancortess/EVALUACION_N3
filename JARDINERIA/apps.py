@@ -1,6 +1,7 @@
 from django.apps import AppConfig
 
 
-class JardineraConfig(AppConfig):
+class JardineriaConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'JARDINERA'
+    name = 'JARDINERIA'
+    
